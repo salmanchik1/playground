@@ -1,5 +1,6 @@
 class Singleton:
-    """An example of singleton design pattern using.
+    """
+    An example of singleton design pattern using.
     """
     def __new__(cls):
         if not hasattr(cls, 'instance'):

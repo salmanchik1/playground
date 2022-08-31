@@ -7,6 +7,7 @@ class Singleton:
             cls.instance = super().__new__(cls)
         return cls.instance
 
+
 singleton = Singleton()
 new_singleton = Singleton()
 

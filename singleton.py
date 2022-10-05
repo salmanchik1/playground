@@ -7,10 +7,10 @@ class Singleton:
             cls.instance = super().__new__(cls)
         return cls.instance
 
+if __name__ == '__main__':
+    singleton = Singleton()
+    new_singleton = Singleton()
 
-singleton = Singleton()
-new_singleton = Singleton()
-
-print(singleton is new_singleton)
-singleton.single_variable = "Singleton variable"
-print(new_singleton.single_variable)
+    print(singleton is new_singleton)
+    singleton.single_variable = "Singleton variable"
+    print(new_singleton.single_variable)
